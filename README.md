@@ -91,4 +91,5 @@ test-nginx               3         3         3            3           1m
 [ansible_tool]:https://docs.ansible.com/ansible/latest/index.html
 [ansible_runner_tool]:https://ansible-runner.readthedocs.io/en/latest/install.html
 [ansible_runner_http_plugin]:https://github.com/ansible/ansible-runner-http
+[ansible_runner_http_installation]: https://pypi.org/project/ansible-runner-http/#files
 
