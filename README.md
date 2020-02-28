@@ -77,7 +77,7 @@ $ kubectl get deployment
 NAME                     DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 nginx-operator           1         1         1            1           2m
 test-nginx               3         3         3            3           1m
-
+```
 
 
 [ansibl_too]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
