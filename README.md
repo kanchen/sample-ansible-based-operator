@@ -18,10 +18,10 @@ the prerequisites to use the operator-sdk
 $ run -it -v /var/run/docker.sock:/var/run/docker.sock kchen/ansible-operator-sdk:0.0.1 /bin/sh
 ```
 
-[ansibl_too]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md 
-[ansibl_operator_user_guide]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md 
+[ansibl_too]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
+[ansibl_operator_user_guide]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
 [operator_sdk_tool]: https://github.com/operator-framework/operator-sdk
-[operator_sdk_user_guide]: https://github.com/operator-framework/operator-sdk/blob/master/doc/user-guide.md ,
+[operator_sdk_user_guide]: https://github.com/operator-framework/operator-sdk/blob/master/doc/user-guide.md
 [openshift_ansible_based_operators]: https://docs.openshift.com/container-platform/4.1/applications/operator_sdk/osdk-ansible.html
 [git_tool]:https://git-scm.com/downloads
 [go_tool]:https://golang.org/dl/
