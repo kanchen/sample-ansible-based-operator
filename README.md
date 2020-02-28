@@ -14,8 +14,10 @@ the prerequisites to use the operator-sdk
 - [ansible-runner-http][ansible_runner_http_plugin] version v1.0.0+
 - [go][go_tool] version v1.13+. (Optional if you aren't installing from source)
 
+Use the docker image build from [github.com/kanchen/operator-sdk](https://github.com/kanchen/operator-sdk)
+
 ```sh
-$ run -it -v /var/run/docker.sock:/var/run/docker.sock kchen/ansible-operator-sdk:0.0.1 /bin/sh
+$ docker run -it -v /var/run/docker.sock:/var/run/docker.sock kchen/ansible-operator-sdk:0.0.1 /bin/sh
 ```
 
 [ansibl_too]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
