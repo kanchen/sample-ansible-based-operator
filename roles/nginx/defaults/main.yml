@@ -1,0 +1,6 @@
+---
+# defaults file for nginx
+image: docker.io/nginx
+tag: 1.17.8
+replicas: 1
+node_port: 30100

@@ -1,0 +1,46 @@
+---
+- name: nginx Deployment
+  k8s:
+    definition:
+      kind: Deployment
+      apiVersion: apps/v1
+      metadata:
+        name: '{{ meta.name }}'
+        namespace: '{{ meta.namespace }}'
+      spec:
+        replicas: "{{ replicas }}"
+        selector:
+          matchLabels:
+            app: nginx
+            run: '{{ meta.name }}'
+        template:
+          metadata:
+            labels:
+              app: nginx
+              run: '{{ meta.name }}'
+          spec:
+            containers:
+            - name: nginx
+              image: "{{ image }}:{{ tag }}"
+              ports:
+              - containerPort: 80
+                name: nginx
+
+- name: nginx Service
+  k8s:
+    definition:
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: '{{ meta.name }}'
+        namespace: '{{ meta.namespace }}'
+      spec:
+        selector:
+          app: nginx
+          run: '{{ meta.name }}'
+        type: NodePort
+        ports:
+        - protocol: TCP
+          port: 80
+          targetPort: 80
+          nodePort: "{{ node_port }}"

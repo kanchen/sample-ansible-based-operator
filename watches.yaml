@@ -1,0 +1,14 @@
+---
+- version: v1alpha1
+  group: web.globalinfotek.com
+  kind: Nginx
+  role: /opt/ansible/roles/nginx
+
+- version: apps/v1
+  kind: Deployment
+  role: /opt/ansible/roles/nginx
+
+- version: v1
+  kind: Service
+  role: /opt/ansible/roles/nginx
+

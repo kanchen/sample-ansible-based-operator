@@ -1,0 +1,11 @@
+apiVersion: web.globalinfotek.com/v1alpha1
+kind: Nginx
+metadata:
+  name: test-nginx
+spec:
+  image: docker.io/nginx
+  tag: 1.17.8
+  replicas: 3
+  node_port: 30001
+#annotations:
+#  ansible.operator-sdk/reconcile-period: "30s"
