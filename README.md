@@ -23,6 +23,13 @@ $ docker run -it -v /var/run/docker.sock:/var/run/docker.sock kchen/ansible-oper
 
 ## Run the operator
 
+Once inside the ansible-operator-sdk interative session, check out [sample-ansible-based-operator](https://github.com/kanchen/sample-ansible-based-operator)
+
+```
+$git clone https://github.com/kanchen/sample-ansible-based-operator.git
+$cd sample-ansible-based-operator
+```
+
 Deploy the CRD:
 
 ```sh
